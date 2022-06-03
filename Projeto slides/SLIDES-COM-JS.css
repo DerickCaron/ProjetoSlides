@@ -1,0 +1,50 @@
+
+.container-slide{
+    display: flex;
+    justify-content: space-between; /*space-between: Cria um espaçamento entre as linhas. Onde a primeira linha é deslocada para o início do eixo transversal, a última é deslocada para o final do eixo transversal; space-around: As linhas são uniformemente distribuídos ao longo do eixo transversal, onde é criado um espaçamento ao redor delas*/
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(128, 9, 9);
+    margin: 20vh auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black; /*Esse bo-shadow serve para fazer aquelas sombras legais*/
+    border: 5px solid rgb(184, 8, 8);
+}
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: .60s;
+}
+.item:first-child{
+    margin-left: -100%;
+} 
+
+.item img {    /*Essa classe "item img" ela não esta no html porque ela é colocada no html automaticamente pela função do javascript quando as imagens mudam */
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.Botão-Ação{
+    font: 60px small-caption;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    user-select: none; /*este comando desta linha serve para impedir que o botão seja selecionado e copiado por exemplo. Serviria também para não selecionarem textos por exemplo*/
+    z-index: 1;
+    color: white;
+    background-color: #1d530755;
+    border-radius: 10px;
+    cursor: pointer;
+}
